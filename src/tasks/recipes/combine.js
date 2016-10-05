@@ -44,7 +44,7 @@ function getPaths(src, baseDir, output) {
             "Please update your Gulpfile, and add a full output path as the " +
             "second argument to your mix.combine() call. " +
             "\n\nMaybe: mix.combine('" + JSON.stringify(src) + "', " +
-            "'./public/js/combined" + parse(src[0]).ext + "')"
+            "'./webroot/js/combined" + parse(src[0]).ext + "')"
         );
     }
 

@@ -1,27 +1,29 @@
 {
-  "name": "laravel-elixir",
-  "version": "6.0.0-11",
-  "description": "Laravel Elixir Core",
+  "name": "cakephp-elixir",
+  "version": "1.0.0",
+  "description": "CakePHP Elixir Core",
   "main": "dist/index.js",
   "scripts": {
-    "compile": "babel --presets=es2015 -d dist/ src/",
-    "test": "cd elixir-test-app && mocha --require babel-core/register --require=test/bootstrap.js",
-    "prepublish": "npm run compile"
+    "make-sass-folder": "mkdir -p resources/assets/sass",
+    "make-js-folder": "mkdir -p resources/assets/js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/laravel/elixir"
+    "url": "https://github.com/pfuri/cakephp-elixir"
   },
   "keywords": [
-    "laravel",
+    "cakephp",
     "elixir",
-    "gulp"
+    "gulp",
+    "sass",
+    "webpack"
   ],
   "author": {
-    "name": "Jeffrey Way"
+    "name": "Paul Furiani",
+    "email": "npm@furiani.net"
   },
   "license": "MIT",
-  "homepage": "https://github.com/laravel/elixir",
+  "homepage": "https://github.com/pfuri/cakephp-elixir",
   "dependencies": {
     "clean-css": "^3.4.12",
     "cli-table": "^0.3.1",
