@@ -24,7 +24,7 @@
   "license": "MIT",
   "homepage": "https://github.com/pfuri/cakephp-elixir",
   "dependencies": {
-    "laravel-elixir": "^6.0.0-9",
+    "laravel-elixir": "6.0.0-5",
     "ncp": "^2.0.0"
   }
 }
