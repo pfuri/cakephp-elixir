@@ -63,7 +63,7 @@ The only remaining step is to install Elixir for CakePHP. To do this you will ne
     "dev": "gulp watch"
   },
   "devDependencies": {
-    "cakephp-elixir": "^1.1.4",
+    "cakephp-elixir": "^1.1.5",
     "bootstrap-sass": "^3.0.0"
   }
 }
