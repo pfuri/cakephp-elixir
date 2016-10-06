@@ -63,15 +63,8 @@ The only remaining step is to install Elixir for CakePHP. To do this you will ne
     "dev": "gulp watch"
   },
   "devDependencies": {
-    "bootstrap-sass": "^3.3.7",
-    "gulp": "^3.9.1",
-    "jquery": "^3.1.0",
-    "cakephp-elixir": "^1.0.1",
-    "laravel-elixir-vue": "^0.1.4",
-    "laravel-elixir-webpack-official": "^1.0.2",
-    "lodash": "^4.14.0",
-    "vue": "^1.0.26",
-    "vue-resource": "^0.9.3"
+    "cakephp-elixir": "^1.1.1",
+    "bootstrap-sass": "^3.0.0"
   }
 }
 ```
@@ -351,9 +344,9 @@ elixir(function(mix) {
 });
 ```
 
-After generating the versioned file, you may use CakePHP Elixir Helper within your [views](/docs/{{version}}/views) to load the appropriately hashed asset. The `elixir` function will automatically determine the current name of the hashed file:
+After generating the versioned file, you may use the CakePHP Elixir Helper within your views to load the appropriately hashed asset. The `version` function will automatically determine the current name of the hashed file:
 
-    <link rel="stylesheet" href="{{ elixir('css/all.css') }}">
+    <link rel="stylesheet" href="<?php echo $this->Elixir->version('css/all.css'); ?>">
 
 #### Versioning Multiple Files
 
@@ -367,9 +360,9 @@ elixir(function(mix) {
 
 Once the files have been versioned, you may use the `elixir` helper function to generate links to the proper hashed files. Remember, you only need to pass the name of the un-hashed file to the `elixir` helper function. The helper will use the un-hashed name to determine the current hashed version of the file:
 
-    <link rel="stylesheet" href="{{ elixir('css/all.css') }}">
+    <link rel="stylesheet" href="<?php echo $this->Elixir->version('css/all.css'); ?>">
 
-    <script src="{{ elixir('js/default.js') }}"></script>
+    <script src="<?php echo $this->Elixir->version('js/default.js'); ?>"></script>
 
 <a name="browser-sync"></a>
 ## BrowserSync
