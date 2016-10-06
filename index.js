@@ -1,1 +1,2 @@
-module.exports = require('laravel-elixir');
+global.Elixir = require('laravel-elixir');
+module.exports = global.Elixir;
