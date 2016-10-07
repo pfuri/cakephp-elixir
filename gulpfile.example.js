@@ -1,8 +1,19 @@
 const elixir = require('cakephp-elixir');
 
+/*
+ |--------------------------------------------------------------------------
+ | Elixir Extensions
+ |--------------------------------------------------------------------------
+ |
+ | Elixir provides several extensions which bring new functionality to Elixir.
+ | A couple of examples have been included below to get you started.
+ | You can use any extension made for the most recent version of Elixir 6.
+ | Feel free to try out different extensions!
+ | Please report any problems to: https://github.com/pfuri/cakephp-elixir/issues
+ |
+ */
 //require('laravel-elixir-del');
 //require('laravel-elixir-webpack-official');
-//require('laravel-elixir-vue');
 
 /*
  |--------------------------------------------------------------------------
@@ -14,9 +25,9 @@ const elixir = require('cakephp-elixir');
  | file for our application, as well as publishing vendor resources.
  |
  */
-
 elixir(mix => {
-		//mix.del(["public/build", "public/css", "public/js"])
+        // Example
+		//mix.del(["webroot/build", "webroot/css", "webroot/js"])
     	//.sass('default.scss').version('css/default.css')
         //.webpack('default.js').version('js/default.js');
 
