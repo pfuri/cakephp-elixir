@@ -82,11 +82,11 @@ If you are developing on a Windows system or you are running your VM on a Window
 
     npm install --no-bin-links
 
-This process could take a couple minutes, so be patient.  
+This process could take a few minutes, so be patient.  Its worth it!
 
 Once complete, you'll notice two new directories and two new files: ***app/node_modules***, ***app/resources***, ***app/elixir.js*** & ***app/gulpfile.js***.
 
-* ***app/node_modules***: This is where your Node.js modules are stored
+* ***[app/node_modules](https://docs.npmjs.com/files/folders#node-modules)***: This is where your Node.js modules are stored
 * ***[app/resources](https://github.com/pfuri/cakephp-elixir/tree/master/resources)***: This is where your raw assets are stored (E.g. sass/less, js, coffeescript, etc..)
 * ***[app/elixir.js](https://github.com/pfuri/cakephp-elixir/blob/master/elixir.example.json)***: This is the elixir configuration file where you can change the default source & destination folders used by Elixir
 * ***[app/gulpfile.js](https://github.com/pfuri/cakephp-elixir/blob/master/elixir.example.json)***: This is where you actually use Elixir (*see below for instructions & examples*) 
