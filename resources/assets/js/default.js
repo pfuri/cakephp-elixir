@@ -10,11 +10,12 @@ require('./bootstrap');
 /**
  * Require your custom js files
  */
+
  // require('./my-javascript-file');
  // require('./subfolder/my-javascript-file');
 
- /**
-  * Custom javascript can also be included below
-  */
+/**
+ * Custom javascript can also be included below
+ */
 
 // $('document').ready(function () { });

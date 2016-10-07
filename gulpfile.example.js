@@ -1,6 +1,7 @@
 const elixir = require('cakephp-elixir');
 
 //require('laravel-elixir-del');
+//require('laravel-elixir-webpack-official');
 //require('laravel-elixir-vue');
 
 /*
@@ -18,5 +19,6 @@ elixir(mix => {
 		//mix.del(["public/build", "public/css", "public/js"])
     	//.sass('default.scss').version('css/default.css')
         //.webpack('default.js').version('js/default.js');
+
         mix.sass('default.scss');
 });
