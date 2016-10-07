@@ -349,7 +349,17 @@ elixir(function(mix) {
 });
 ```
 
-After generating the versioned file, you may use the [CakePHP Elixir Helper](https://github.com/pfuri/cakephp-elixir-helper) within your views to load the appropriately hashed asset. The `version` function will automatically determine the current name of the hashed file:
+After generating the versioned file, you may use the [CakePHP Elixir Helper](https://github.com/pfuri/cakephp-elixir-helper) within your views to load the appropriately hashed asset. You must add the Elixir Helper to your app's helpers array before it will be available:
+
+```php
+class AppController {
+    public $helpers = array('Elixir');
+
+    [...]
+}
+```
+
+The `version` function will automatically determine the current name of the hashed file:
 
     <link rel="stylesheet" href="<?php echo $this->Elixir->version('css/all.css'); ?>">
 
