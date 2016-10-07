@@ -63,8 +63,13 @@ The only remaining step is to install Elixir for CakePHP. To do this you will ne
     "dev": "gulp watch"
   },
   "devDependencies": {
-    "cakephp-elixir": "^1.2.0",
-    "bootstrap-sass": "^3.0.0"
+    "bootstrap-sass": "^3.3.7",
+    "gulp": "^3.9.1",
+    "jquery": "^3.1.0",
+    "cakephp-elixir": "^1.2.1",
+    "laravel-elixir-del": "^0.1.1",
+    "laravel-elixir-webpack-official": "^1.0.2",
+    "lodash": "^4.16.2"
   }
 }
 ```
@@ -84,7 +89,7 @@ Once complete, you'll notice two new directories and two new files: ***app/node_
 * ***app/node_modules***: This is where your Node.js modules are stored
 * ***app/resources***: This is where your raw assets are stored (E.g. sass/less, js, coffeescript, etc..)
 * ***app/elixir.js***: This is the elixir configuration file where you can change the default source & destination folders used by Elixir
-* ***app/gulpfile.js***: This is where you actually use Elixir (*see below for instructions*)
+* ***app/gulpfile.js***: This is where you actually use Elixir (*see below for instructions & examples*) 
 
 <a name="running-elixir"></a>
 ## Running Elixir
@@ -344,7 +349,7 @@ elixir(function(mix) {
 });
 ```
 
-After generating the versioned file, you may use the CakePHP Elixir Helper within your views to load the appropriately hashed asset. The `version` function will automatically determine the current name of the hashed file:
+After generating the versioned file, you may use the [CakePHP Elixir Helper](https://github.com/pfuri/cakephp-elixir-helper) within your views to load the appropriately hashed asset. The `version` function will automatically determine the current name of the hashed file:
 
     <link rel="stylesheet" href="<?php echo $this->Elixir->version('css/all.css'); ?>">
 
