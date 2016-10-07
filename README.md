@@ -1,4 +1,4 @@
-***Note: This module is targeted for CakePHP 2.x.  For CakePHP 3.x please use [cakephp3-elixir](https://github.com/pfuri/cakephp3-elixir) instead.***
+***Note: This module is targeted for CakePHP 2.x.  For CakePHP 3.x please use [cakephp3-elixir](https://www.npmjs.com/package/cakephp3-elixir) instead.***
 
 # Elixir For CakePHP
 
@@ -179,7 +179,7 @@ elixir(function(mix) {
 
 While it's recommended that you use Elixir for CakePHP's default asset directories, if you require a different base directory, you may begin any file path with `./`. This instructs Elixir to begin at the project root, rather than using the default base directory.
 
-For example, to compile a file located at `app/assets/sass/default.scss` and output the results to `app/webroot/css/default.css`, you would make the following call to the `sass` method:
+For example, to compile a file located at `resources/assets/sass/default.scss` and output the results to `app/webroot/css/default.css`, you would make the following call to the `sass` method:
 
 ```javascript
 elixir(function(mix) {
@@ -258,7 +258,7 @@ elixir(function(mix) {
 });
 ```
 
-To choose a different output or base directory, simply specify your desired paths with a leading `.`. Then you may specify the paths relative to the root of your application. For example, to compile `app/assets/js/default.js` to `app/webroot/dist/default.js`:
+To choose a different output or base directory, simply specify your desired paths with a leading `.`. Then you may specify the paths relative to the root of your application. For example, to compile `resources/assets/js/default.js` to `app/webroot/dist/default.js`:
 
 ```javascript
 elixir(function(mix) {
