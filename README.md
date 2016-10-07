@@ -53,7 +53,7 @@ Next, you'll need to pull in [Gulp](http://gulpjs.com) as a global NPM package:
 
 #### Elixir For CakePHP
 
-The only remaining step is to install Elixir for CakePHP. To do this you will need a create a file in your app directory named `package.json` and paste in the following:  
+The only remaining step is to install Elixir for CakePHP. To do this you will need a create a file in your app directory named ***[package.json](https://github.com/pfuri/cakephp-elixir/blob/master/package.example.json)*** and paste in the following:  
 
 ```javascript
 {
@@ -87,9 +87,9 @@ This process could take a couple minutes, so be patient.
 Once complete, you'll notice two new directories and two new files: ***app/node_modules***, ***app/resources***, ***app/elixir.js*** & ***app/gulpfile.js***.
 
 * ***app/node_modules***: This is where your Node.js modules are stored
-* ***app/resources***: This is where your raw assets are stored (E.g. sass/less, js, coffeescript, etc..)
-* ***app/elixir.js***: This is the elixir configuration file where you can change the default source & destination folders used by Elixir
-* ***app/gulpfile.js***: This is where you actually use Elixir (*see below for instructions & examples*) 
+* ***[app/resources](https://github.com/pfuri/cakephp-elixir/tree/master/resources)***: This is where your raw assets are stored (E.g. sass/less, js, coffeescript, etc..)
+* ***[app/elixir.js](https://github.com/pfuri/cakephp-elixir/blob/master/elixir.example.json)***: This is the elixir configuration file where you can change the default source & destination folders used by Elixir
+* ***[app/gulpfile.js](https://github.com/pfuri/cakephp-elixir/blob/master/elixir.example.json)***: This is where you actually use Elixir (*see below for instructions & examples*) 
 
 <a name="running-elixir"></a>
 ## Running Elixir
