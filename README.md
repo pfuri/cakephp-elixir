@@ -1,3 +1,5 @@
+***Note: This module is targeted for CakePHP 2.x.  For CakePHP 3.x please use [cakephp3-elixir](https://github.com/pfuri/cakephp3-elixir) instead.***
+
 # Elixir For CakePHP
 
 - [Introduction](#introduction)
@@ -20,7 +22,7 @@
 <a name="introduction"></a>
 ## Introduction
 
-If you love Elixir, but also love CakePHP, you wil love Elixir for CakePHP! 
+If you love Elixir, but also love CakePHP, you wil love Elixir for CakePHP!
 
 Elixir for CakePHP provides a clean, fluent API for defining basic [Gulp](http://gulpjs.com) tasks for your CakePHP application. Elixir supports common CSS and JavaScript pre-processors like [Sass](http://sass-lang.com) and [Webpack](https://webpack.github.io/). Using method chaining, Elixir allows you to fluently define your asset pipeline. For example:
 
@@ -84,12 +86,13 @@ If you are developing on a Windows system or you are running your VM on a Window
 
 This process could take a few minutes, so be patient.  Its worth it!
 
-Once complete, you'll notice two new directories and two new files: ***app/node_modules***, ***app/resources***, ***app/elixir.js*** & ***app/gulpfile.js***.
+Once complete, you'll notice two new directories and three new files: ***app/node_modules***, ***app/resources***, ***app/elixir.js***, ***app/gulpfile.js*** & ***app/View/Helper/ElixirHelper.php***.
 
 * ***[app/node_modules](https://docs.npmjs.com/files/folders#node-modules)***: This is where your Node.js modules are stored
 * ***[app/resources](https://github.com/pfuri/cakephp-elixir/tree/master/resources)***: This is where your raw assets are stored (E.g. sass/less, js, coffeescript, etc..)
 * ***[app/elixir.js](https://github.com/pfuri/cakephp-elixir/blob/master/elixir.example.json)***: This is the elixir configuration file where you can change the default source & destination folders used by Elixir
-* ***[app/gulpfile.js](https://github.com/pfuri/cakephp-elixir/blob/master/elixir.example.json)***: This is where you actually use Elixir (*see below for instructions & examples*) 
+* ***[app/gulpfile.js](https://github.com/pfuri/cakephp-elixir/blob/master/elixir.example.json)***: This is where you actually use Elixir *(see below sections for specific instructions & examples)* 
+* ***[app/View/Helper/ElixirHelper.php](https://github.com/pfuri/cakephp-elixir/blob/master/ElixirHelper.php)***: This is the CakePHP Helper which is used to provide versioning *(see [Versioning / Cache Busting](#versioning-and-cache-busting))*
 
 <a name="running-elixir"></a>
 ## Running Elixir
@@ -349,7 +352,7 @@ elixir(function(mix) {
 });
 ```
 
-After generating the versioned file, you may use the [CakePHP Elixir Helper](https://github.com/pfuri/cakephp-elixir-helper) within your views to load the appropriately hashed asset. You must add the Elixir Helper to your app's helpers array before it will be available:
+After generating the versioned file, you may use the [CakePHP Elixir Helper](https://github.com/pfuri/cakephp-elixir/blob/master/ElixirHelper.php) within your views to load the appropriately hashed asset. You must add the Elixir Helper to your app's helpers array before it will be available:
 
 ```php
 class AppController {
